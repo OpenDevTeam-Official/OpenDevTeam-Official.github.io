@@ -105,3 +105,22 @@ body {
 	cursor: help;
 }
 
+.footer {
+	/* should be centered at the bottom */
+	position: absolute;
+
+	bottom: 0;
+
+	opacity: 5%;
+
+	transition: 3s;
+}
+
+.footer:hover {
+	opacity: 100%;
+	transition: 3s;
+}
+
+.footer-text {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
