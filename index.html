@@ -1,13 +1,36 @@
+<!--
+Hello there you weirdo. Now that you're here, mind having a nice little chat?
+Our Discord link is on this site.
+Cheers, ODT
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>yo</title>
+	<!-- Discord Embed -->
+	<meta content="Open Dev Team" property="og:title" />
+	<meta content="Some cringe slogan (later)" property="og:description" />
+	<meta content="https://opendevteam.com" property="og:url" />
+	<meta content="https://opendevteam.com/assets/logo.png" property="og:image" />
+	<meta content="#000000" data-react-helmet="true" name="theme-color" />
+	<title>Open Dev Team</title>
 	<link rel="stylesheet" href="index.css">
+	<!-- <script src="disable.js" defer></script> -->
+	<script type="module" src="index.js"></script>
 </head>
 <body>
-	i saved you from burning your eyes.
+	<div class="content">
+		<img src="assets/Logo.png" alt="OpenDevTeam Logo" class="logo" >
+		<div class="title">OpenDT</div>
+	</div>
+	<div class="linkcontainer">
+		<button class="fiverr custom-button">Fiverr</button>
+		<button class="org-github custom-button">Github</button>
+		<button class="discord custom-button">Discord</button>
+		<!-- More links here -->
+	</div>
+	<button class="nyan-button" onclick="nyanButton()">.</button>
 </body>
 </html>

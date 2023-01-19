@@ -1,3 +1,106 @@
 body {
-	background-color: #333333;
+	/* Disable Selection shits */
+	user-select: none;
+	/* Remove scroll bars */
+	margin: 0;
+	/* Background */
+	background-color: #1C1C1C;
+	min-height: 100vh;
+	min-width: 100vw;
+	/* Center Content */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
+
+.content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.logo {
+	height: 8vw;
+	width: 8vw;
+	padding-right: 1vw;
+}
+
+.title {
+	/* Font shit */
+	font-size: 12vw;
+	font-family: monospace;
+	/* Color of the Text */
+	color: rgba(255, 255, 255, 255);
+	background-clip: text;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Animate the Text ever so slightly */
+	animation: hue 30s infinite linear;
+}
+
+.linkcontainer {
+	padding-top: 2vh;
+	display: flex;
+	flex-direction: row;
+	gap: 2vw;
+}
+
+.custom-button {
+	/* smth smth  */
+	height: 5vw;
+	width: 15vw;
+	outline: black solid 3px;
+	background-color: transparent;
+	transition: 0.3s;
+	font-size: 3vw;
+}
+
+.custom-button:hover {
+	background-color: rgba(255, 255, 255, 0.705);
+	outline-offset: 0.3vw;
+	outline-style: double;
+}
+
+.custom-button:active {
+	transition: 0s;
+	outline-color: white;
+	background-color: transparent;
+}
+
+/* Animation for the main text */
+@keyframes hue {
+	from {
+	  -webkit-filter: hue-rotate(0deg);
+	}
+	to {
+	  -webkit-filter: hue-rotate(-360deg);
+	}
+  }
+
+
+@keyframes gradient-bg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.nyan-button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0%;
+	transition: 0.2s;
+}
+
+.nyan-button:hover {
+	opacity: 100%;
+}
+
